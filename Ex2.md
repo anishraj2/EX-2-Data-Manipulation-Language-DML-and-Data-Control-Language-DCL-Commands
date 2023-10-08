@@ -129,12 +129,14 @@ select count(*) from manager;
 ### Q13) Find maximum, minimum and average salary in EMP table.
 
 ### QUERY:
-select max(salary) from manager;
-select min(salary) from manager;
-select avg(salary) from manager;
+select max(salary) from manager;<br>
+select min(salary) from manager;<br>
+select avg(salary) from manager;<br>
 
 ### OUTPUT:
-![OUTPUT](13.png)
+![OUTPUT](13a.png)<br>
+![OUTPUT](13b.png)<br>
+![OUTPUT](13c.png)
 
 ### Q14) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
