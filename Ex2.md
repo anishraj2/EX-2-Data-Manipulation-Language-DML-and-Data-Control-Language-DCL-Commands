@@ -1,7 +1,7 @@
 # EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+## DATE:
 ## AIM:
 To create a manager database and execute DML queries using SQL.
-
 
 ## DML(Data Manipulation Language)
 <div align="justify">
@@ -46,7 +46,6 @@ select ename as "Name",salary*12 as "Annual salary" from manager;
 ![OUTPUT](3.png)
 ### Q04)	List the names of Clerks from emp table.
 
-
 ### QUERY:
 select ename from manager where designation='clerk';
 
@@ -55,16 +54,13 @@ select ename from manager where designation='clerk';
 
 ### Q05)	List the names of employee who are not Managers.
 
-
 ### QUERY:
 select ename from manager where designation <> 'manager';
-
 
 ### OUTPUT:
 ![OUTPUT](5.png)
 
 ### Q06)	List the names of employees not eligible for commission.
-
 
 ### QUERY:
 select ename from manager where commission=0;
@@ -74,7 +70,6 @@ select ename from manager where commission=0;
 
 ### Q07)	List employees whose name either start or end with ‘s’.
 
-
 ### QUERY:
 select ename from manager where ename like '%S' or ename like 'S%';
 
@@ -83,16 +78,13 @@ select ename from manager where ename like '%S' or ename like 'S%';
 
 ### Q08) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
 
-
 ### QUERY:
 select ename,designation as "job",deptno,hiredate from manager order by hiredate asc;
-
 
 ### OUTPUT:
 ![OUTPUT](8.png)
 
 ### Q09) List the Details of Employees who have joined before 30 Sept 81.
-
 
 ### QUERY:
 select * from manager where hiredate<to_date('1981-09-30','YYYY-MM-DD');
@@ -102,7 +94,6 @@ select * from manager where hiredate<to_date('1981-09-30','YYYY-MM-DD');
 
 ### Q10) List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 
-
 ### QUERY:
 select ename,deptno,salary from manager order by deptno asc,salary desc;
 
@@ -110,7 +101,6 @@ select ename,deptno,salary from manager order by deptno asc,salary desc;
 ![OUTPUT](10.png)
 
 ### Q11) List the names of employees not belonging to dept no 30,40 & 10
-
 
 ### QUERY:
 select ename from manager where deptno not in (30,40,10);
@@ -121,7 +111,6 @@ select ename from manager where deptno not in (30,40,10);
 
 ### QUERY:
 select count(*) from manager;
-
 
 ### OUTPUT:
 ![OUTPUT](12.png)
